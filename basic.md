@@ -46,93 +46,7 @@ MacPorts会自己重新编译系统现有库，编译时间较长，好处是不
 
 还有最后一个问题，如果你使用了proxy或者firewall，MacPorts默认的rsync有可能会失效，请切换至svn方式进行同步。
 
-### MacPorts
-
-以下内容可能会随时间的推移而发生变化，请到[官方网站](https://www.macports.org/)查看最新文档（ RTFM ！！）
-
-* 安装MacPorts:
-
-1.安装Xcode和Xcode Command Line Tools
-
-2.在终端中同意Xcode许可
-    
-    sudo xcodebuild －license
-
-3.到[这里](https://www.macports.org/install.php)选择与你系统版本相符的pkg包，下载并安装
-
-* 常用命令
-
-寻求帮助:
-    
-    port help
-这个命令可以指定动作，如:
-    
-    port help selfupdate
-
-同步 ports tree:
-    
-    sudo port selfupdate
-这个命令也会同时检测是否有新版本的MacPorts。
-
-安装软件:
-    
-    sudo port install gcc
-
-列出所有可用包:
-    
-    port list
-当没有指定包名称时，会列出所有可用包，当指定了包名称时，会列出该包的所有可用版本。
-
-查看已安装软件包:
-    
-    port installed
-
-查看可升级软件包:
-    
-    port outdated
-
-升级所有软件:
-    
-    sudo port upgrade outdated
-
-搜索某个软件:
-    
-    port search gcc
-
-查看软件包信息:
-    
-    port info gcc
-
-清除垃圾:
-    
-    sudo port clean --all gcc
-你也可以清除指定文件，详情自行port help clean。
-
-卸载软件:
-    
-    sudo port uninstall gcc
-
-移除已升级的软件包不活跃的版本:
-    
-    sudo port unistall inactive
-
-列出软件包的依赖关系:
-    
-    port deps gcc
-
-* 高级使用技巧（Port Variants）:
-
-Port Variants为我们提供了一种自定义编译选项的方法（和Gentoo中的USE标签类似）。
-
-获取可用的选项:
-    
-    port variants gcc
-
-调用variants进行编译:
-    
-    sudo port －v install fetchmail ＋ssl
-
-### Homebrew
+### Homebrew安装与基本使用
 
 Homebrew为Mac OS X提供了非常方便的软件安装方式，解决了包的依赖问题，不再需要烦人的sudo，一键式编译，无参数困扰。
 
@@ -237,7 +151,7 @@ homebrew-cask和Homebrew的区别：
     brew cask uninstall APP && brew cask install APP
 
 
-#### 一键装机？有了homebrew-cask就可以
+#### homebrew-cask 一键装机
 
     brew cask install alfred
     brew cask install qq
@@ -272,17 +186,15 @@ Go2Shell可以配合Iterm2使用，设置方式是在Termial執行下述命令
 
 ## zsh
 
-喜欢强大的zsh，直接切换成zsh
+将默认 Shell 切换成zsh
 
     chsh -s /bin/zsh
 
-## oh-my-zsh
+## Sublime Text 2
 
-## prezto（oh-my-zsh不要用？试试prezto）
+功能强大的文本编辑器 Sublime Text。下载安装后，设置软链接直在 Shell 中调用 Sublime Text:
 
-https://github.com/sorin-ionescu/prezto
-
-## tmux
+    $ ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
 
 ## 浏览器
 
@@ -302,4 +214,3 @@ https://github.com/sorin-ionescu/prezto
 
 https://github.com/perfectworks/vim
 
-### Emacs
