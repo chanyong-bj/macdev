@@ -104,6 +104,8 @@ Homebrew为Mac OS X提供了非常方便的软件安装方式，解决了包的�
 
 ### homebrew-cask
 
+[官方网站](http://caskroom.io/)
+
 通常OS X下二进制软件是通过App Store安装的，homebrew-cask是一个基于HomeBrew的软件安装程序，使用homebrew-cask可以在命令行下安装软件包，相对Mac App Store，还有一些优势：
 
 * 安装软件体验一致、简洁、优雅、快速
@@ -118,7 +120,7 @@ homebrew-cask和Homebrew的区别：
 
 #### 安装homebrew-cask
 
-    brew install caskroom/cask/brew-cask
+	brew tap caskroom/cask
 
 #### 常用命令
 
@@ -196,21 +198,16 @@ Go2Shell可以配合Iterm2使用，设置方式是在Termial執行下述命令
 
     $ ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
 
-## 浏览器
+## 设置 dotfiles
 
-### Google Chrome
-
-内置Intel HD 4000/HD 5000/Iris系列显卡的机器，比如2012 Mac Air, 2013 Mac pro 13等，在OS X操作系统上运行Chrome，会频繁发生操作系统死机的情况。这个问题在[2012.6.28就被Google确认](http://gizmodo.com/5922235/we-were-right-google-confirms-chrome-is-to-blame-for-crashing-macbooks)，是OS X内核的一个Bug，直到现在一直没有修正。
-
-临时的解决办法是，关闭Chrome的硬件加速, 在Chrome的设置里，选择"Show advanced settings"，然后关闭选项"Use hardware acceleration when available"。
-
-### Safari
-
-### Firefox
+[同步dotfiles](https://github.com/chanyong-bj/dotfiles)
 
 ## 编辑器
 
 ### Vim
 
 https://github.com/perfectworks/vim
+
+
+
 

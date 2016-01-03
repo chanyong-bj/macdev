@@ -1,6 +1,6 @@
 # python开发环境的设置
 
-## Python (可选)
+## 安装 Python
 
 虽然Mac OS X 自带了Python，但是我们可以选择使用Homebrew安装Python 2.7.x。因为：
 
@@ -54,7 +54,7 @@
 
 创建第一个virtualenv：
 
-    mkvirtualenv --no-site-packages test
+    mkvirtualenv testvirt
 
 ## PyCharm
 
