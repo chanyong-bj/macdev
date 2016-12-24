@@ -202,12 +202,46 @@ Go2Shell可以配合Iterm2使用，设置方式是在Termial執行下述命令
 
 [同步dotfiles](https://github.com/chanyong-bj/dotfiles)
 
-## 编辑器
+## 其他软件及配置
 
-### Vim
+### 系统快捷键设置
 
-https://github.com/perfectworks/vim
+恢复 `F11/F12` 标准功能键
 
+![F11/F12 标准功能键](pic/F11-F12_setting.png)
 
+恢复 `Trackpad` 单击的轻触
 
+![Trackpad settings](pic/trackpad_setting.png)
+
+启用全键盘控制 -- 在窗口中通用 Tab 键控制光标的 Focus
+
+![全键盘控制](pic/bk_all_control.png)
+
+设置锁屏快捷键 Hot Corner
+
+![Screen_saver_hot_corner](pic/sc_hot_corner.png)
+
+设置屏幕截图快捷键
+
+![sc_shot_setting](pic/sc_shot_setting.png)
+
+其他快捷键可参考[Mac 键盘快捷键](https://support.apple.com/zh-cn/HT201236) 
+
+输入法切换快捷键设置
+
+![InputSource](pic/input_source.png)
+
+### SizeUp 窗口控制软件
+
+在系统 `安全隐私` 启用 SizeUp 后，SizeUp 快捷键设置
+
+![SizeUp_setting](pic/sizeup_setting.png)
+
+### Alfred 桌面搜索
+
+预先关闭系统 Spotlight 快捷键，再配置 Alfred 的 `Command + Space` 快捷键
+
+![spotlight](pic/spotlight.png)
+![alfred_setting](pic/alfred_setting.png)
 
