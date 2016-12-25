@@ -236,6 +236,7 @@ Go2Shell可以配合Iterm2使用，设置方式是在Termial執行下述命令
 
 在系统 `安全隐私` 启用 SizeUp 后，SizeUp 快捷键设置
 
+![SizeUp_security](pic/sizeup_security.png)
 ![SizeUp_setting](pic/sizeup_setting.png)
 
 ### Alfred 桌面搜索
